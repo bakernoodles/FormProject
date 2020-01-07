@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form Page</title>
+        <meta name="description" content="Form-Project">
+        <meta name="author" content="Christopher Yniguez">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    </head>
+    <body >
+        <header class="borderR boxShadows">
+            <h1 id="title">EDERSONS CONSTRUCTION</h1>
+            <p id="description">Thank you for taking the time to fill out this short survey</p>
+        </header>
+
+        <div id="container" class="borderR boxShadows">
+            <form id="survey-form">
+                <label id="name-label">Name</label>
+                <input type="text" required name="name" id="name" size="64" maxlength="64"
+                placeholder="Enter Your Name" class="inputBox">
+                <label id="email-label">Email</label>
+                <input type="email" name="email" id="email" size="64" maxlength="64" required 
+                placeholder="Enter Your Email" class="inputBox">
+                <label id="number-label">Age</label>
+                <input class="inputBox" type="number" required size="3" maxlength="3" min="1" max="120"
+                 id="number" placeholder="Enter Your Age">
+                <label id="number-label">Employment Status</label>
+                <select id="dropdown">
+                    <option value="Blank">--</option>
+                    <option value="Unemployed">Unemployed</option>
+                    <option value="Part-Time">Employed Part-Time</option>
+                    <option value="Full-Time">Employed Full-Time</option>
+                    <option value="Internship">Current Intern</option>
+                    <option value="Entrepreneur">Entrepreneur</option>
+                </select>
+                <label id="radio-label">Gender</label>
+                <div class="radioBtns" style="padding-left: 7px;">
+                    <input type="radio" name="gender" value="male" required>Male
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="other">other
+                </div>
+                <label id="checkbox-label">Construction Experience</label>
+                <div class="radioBtns" style="padding-left: 7px; font-size: 16px;">
+                    <input type="checkbox" name="none" value="None">None<br>
+                    <input type="checkbox" name="laborer" value="Construction Laborer">Construction Laborer<br>
+                    <input type="checkbox" name="plumber" value="Plumber">Plumber<br>
+                    <input type="checkbox" name="electrician" value="Electrician">Electrician<br>
+                    <input type="checkbox" name="Carpenter" value="Carpenter">Carpenter<br>
+                    <input type="checkbox" name="Pipefitter" value="Pipefitter">Pipefitter<br>
+                    <input type="checkbox" name="Inspector" value="Inspector">Inspector<br>
+                </div>
+                <label id="otherExperience-label">Other Experience</label>
+                <textarea id="textArea" name="textarea" placeholder="Please describe any other construction related experience here."></textarea>
+                
+
+                <input id="submit" type="submit" value="Submit" class="borderR" width="98%">
+            </form>
+        </div>
+    
+    </body>
+
+</html>

@@ -1,0 +1,152 @@
+/*Started with a Mobile fuirst vertical approach and gradually adjusted for big viewports and very small viewports.*/
+html{
+    background-color: #000000;
+    background-image: url("Construction.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+}
+body, html{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', "Times New Roman", Times, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+#title{
+    letter-spacing: 7px;
+    font-family: 'Poiret One', "Times New Roman", Times, cursive;
+}
+#description{
+    align-self: center;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffba5a;
+    opacity:0.96;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width:700px;
+    max-width: 100vw;
+    height: 200px;
+    padding: 22px;
+    box-sizing: border-box;
+    margin-bottom: .1px;
+}
+.inputBox, select{
+    width: 75%;
+    background-color: mintcream;
+}
+label{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0px;
+    padding-top: 7px;
+}
+label,input, select{
+    letter-spacing: 2px;
+    padding-bottom: 5px;
+}
+#container{
+    align-self: center;
+    box-sizing: border-box;
+    width:100%;
+    max-width: 700px;
+    background-color: #5affba;
+    opacity:0.95;
+    padding: 22px;
+    
+}
+.paddingBtm{
+    padding-bottom: 7px;
+}
+form{
+    display: flex;
+    flex-direction:column;
+}
+#submit{
+    
+    margin: 35px 0px;
+    background-color:#ffba5a ;
+    border: transparent;
+    padding: 6px 2px;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+}
+#submit:hover{
+    background-color:#d89e4d ;
+}
+#submit:active{
+    padding: 7px;
+    background-color:#e2b06a ;
+}
+
+.borderR{
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:2px;
+    
+}
+textarea{
+    height: 100px;
+}
+
+
+/*Anything big. Can be computer monitors or Ipads. */
+@media screen and (min-height: 900px){
+    body{
+        padding-top: 30px;
+    }
+    html{
+        background-size: 100% 100%;
+    }
+    #submit{
+       width: 80%;
+        align-self: center;
+    }
+    #container{
+        margin-bottom: 30px;
+    }
+
+}
+/*Very small screens. Apple Watch pixel friendly.*/
+@media screen and (max-width: 380px){
+    header{
+        min-width: 200px;
+        height: 140px;
+        min-width: 240px;
+    }
+
+    #description{
+        font-size: 0.8em;
+        padding-bottom: 8px;
+    }
+    #container{
+        min-width: 240px;
+        padding: 12px;
+        padding-bottom: 22px;
+        margin-bottom: 0px;
+    }
+    .inputBox, select{
+        width: 98%;
+    }
+    #title{
+        letter-spacing: 3px;
+        font-size: 23px;
+        padding-top: 5px;
+    }
+    label{
+        font-size: 14px;
+        margin: 7px 0px;
+    }
+    .radioBtns{
+        font-size: 15px;
+    }
+}
